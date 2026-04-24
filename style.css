@@ -1,0 +1,103 @@
+* {
+    font-family: "Segoe UI", sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    background: radial-gradient(circle at top, #1b2a5a, #0b1025);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.scene {
+    perspective: 1200px;
+}
+
+.card {
+    width: 380px;
+    padding: 30px;
+    background: linear-gradient(145deg, #e6f2ff, #cfe4ff);
+    border-radius: 20px;
+    box-shadow: 0 30px 60px rgba(0,0,0,0.35);
+    transition: transform 0.5s;
+}
+
+.card:hover {
+    transform: rotateX(6deg) rotateY(-6deg) translateY(-10px);
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+label {
+    margin-top: 12px;
+    display: block;
+    font-weight: 500;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="range"] {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 6px;
+    box-shadow: inset 2px 2px 5px rgba(0,0,0,0.15);
+}
+
+.password-box {
+    display: flex;
+    gap: 8px;
+}
+
+.password-box button {
+    border: none;
+    border-radius: 10px;
+    padding: 0 14px;
+    cursor: pointer;
+}
+
+.options {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 12px 0;
+    font-size: 14px;
+}
+
+.generate-btn,
+.copy-btn,
+.signup-btn {
+    width: 100%;
+    padding: 12px;
+    margin-top: 12px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    background: linear-gradient(145deg, #6f86ff, #4c63ff);
+    color: white;
+    box-shadow: 0 8px 18px rgba(0,0,0,0.3);
+}
+
+.copy-btn {
+    background: linear-gradient(145deg, #22c55e, #16a34a);
+}
+
+.strength {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.error {
+    color: red;
+}
+
+.success {
+    color: green;
+    display: block;
+    margin-top: 10px;
+}
